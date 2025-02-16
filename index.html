@@ -1,12 +1,265 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-        <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Курсовая.</title>
+  <title>Социальный Рейтинг | Ярослав Юпатов</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-    <body>
-            <h1>Курсовая.</h1>
-        <script>script.js</script>
-    </body>
+  <header>
+    <p>
+    <h1>Социальный  рейтинг</h1>
+    </p>
+  </header>
+
+  <main>
+    <input type="text" id="search" placeholder="Поиск...">
+    <br>
+    <select id="sort">
+        <option value="rating">По рейтингу</option>
+        <option value="name">По имени</option>
+      </select>
+      </main>
+    </br>
+
+    <table id="scoreboard">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Имя</th>
+          <th>Рейтинг</th>
+          <th>Действия</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Добавляем атрибуты data-* к каждой строке таблицы -->
+        <tr class="user-row" data-id="1"
+         data-name="Бабинский Вадим"
+         data-rating="1">
+          <td>1</td>
+          <td>Бабинский Вадим</td>
+          <td>1</td>
+          <td><a
+             href="/profile1.html">Профиль</a>
+            </td>
+        </tr>
+        
+        <tr class="user-row" data-id="2" 
+        data-name="Баркалова София"
+         data-rating="1">
+          <td>2</td>
+          <td>Баркалова София</td>
+          <td>1</td>
+          <td> <a href="profile2.html">Профиль</a> </td>
+        </tr>
+
+        <tr class="user-row" data-id="3"
+         data-name="Богатырев Владимир"
+         data-rating="1">
+          <td>3</td>
+          <td>Богатырев Владимир</td>
+          <td>1</td>
+          <td><a href="profile3.html" Профиль></a> </td>
+        </tr>
+        
+    <tr class="user-row" data-id="4"
+     data-name="Веселов Антон"
+     data-rating="1">
+      <td>4</td>
+      <td>Веселов Антон</td>
+      <td>1</td>
+      <td><a href="profile.html?id=4">Профиль</a></td>
+    </tr>
+
+<tr class="user-row" data-id="5"
+ data-name="Железняк Милана"
+ data-rating="1">
+  <td>5</td>
+  <td>Железняк Милана</td>
+  <td>1</td>
+  <td><a href="profile.html?id=5">Профиль</a></td>
+</tr>
+
+<tr class="user-row" data-id="6"
+ data-name="Иванов Дмитрий"
+ data-rating="1">
+  <td>6</td>
+  <td>Иванов Дмитрий</td>
+  <td>1</td>
+  <td><a href="profile.html?id=6">Профиль</a></td>
+</tr>
+<tr class="user-row" data-id="7"
+ data-name="Каминский Владислав"
+ data-rating="1">
+  <td>7</td>
+  <td>Каминский Владислав</td>
+  <td>1</td>
+  <td><a href="profile.html?id=7">Профиль</a></td>
+</tr>
+
+<tr class="user-row" data-id="8"
+ data-name="Киселёв Никита"
+ data-rating="1">
+  <td>8</td>
+  <td>Киселёв Никита</td>
+  <td>1</td>
+  <td><a href="profile.html?id=8">Профиль</a></td>
+</tr>
+
+<tr class="user-row" data-id="9"
+ data-name="Колодинская Виктория"
+ data-rating="1">
+  <td>9</td>
+  <td>Колодинская Виктория</td>
+  <td>1</td>
+  <td><a href="profile.html?id=9">Профиль</a></td>
+</tr>
+
+<tr class="user-row" data-id="10"
+ data-name="Колосович Денис"
+ data-rating="1">
+  <td>10</td>
+  <td>Колосович Денис</td>
+  <td>1</td>
+  <td><a href="profile.html?id=10">Профиль</a></td>
+</tr>
+
+<tr class="user-row" data-id="11"
+ data-name="Комаров Кирилл"
+ data-rating="1">
+  <td>11</td>
+  <td>Комаров Кирилл</td>
+  <td>1</td>
+  <td><a href="profile.html?id=11">Профиль</a></td>
+</tr>
+
+<tr class="user-row" data-id="12"
+ data-name="Лопарёв Владимир"
+ data-rating="1">
+  <td>12</td>
+  <td>Лопарёв Владимир</td>
+  <td>1</td>
+  <td><a href="profile.html?id=12">Профиль</a></td>
+</tr>
+
+<tr class="user-row" data-id="13"
+ data-name="Маханьков Никита"
+ data-rating="1">
+  <td>13</td>
+  <td>Маханьков Никита</td>
+  <td>1</td>
+  <td><a href="profile.html?id=13">Профиль</a></td>
+</tr>
+
+<tr class="user-row" data-id="14"
+ data-name="Прохоренков Никита"
+ data-rating="1">
+  <td>14</td>
+  <td>Прохоренков Никита</td>
+  <td>1</td>
+  <td><a href="profile.html?id=14">Профиль</a></td>
+</tr>
+
+<tr class="user-row" data-id="15"
+ data-name="Реут Даниил"
+ data-rating="1">
+  <td>15</td>
+  <td>Реут Даниил</td>
+  <td>1</td>
+  <td><a href="profile.html?id=15">Профиль</a></td>
+</tr>
+
+<tr class="user-row" data-id="16"
+ data-name="Сафонов Алексей"
+ data-rating="1">
+  <td>16</td>
+  <td>Сафонов Алексей</td>
+  <td>1</td>
+  <td><a href="profile.html?id=16">Профиль</a></td>
+</tr>
+
+<tr class="user-row" data-id="17"
+ data-name="Слышанков Иван"
+ data-rating="1">
+  <td>17</td>
+  <td>Слышанков Иван</td>
+  <td>1</td>
+  <td><a href="profile.html?id=17">Профиль</a></td>
+</tr>
+
+<tr class="user-row" data-id="18"
+ data-name="Сметанин Станислав"
+ data-rating="1">
+  <td>18</td>
+  <td>Сметанин Станислав</td>
+  <td>1</td>
+  <td><a href="profile.html?id=18">Профиль</a></td>
+</tr>
+
+<tr class="user-row" data-id="19"
+ data-name="Струнин Владислав"
+ data-rating="1">
+  <td>19</td>
+  <td>Струнин Владислав</td>
+  <td>1</td>
+  <td><a href="profile.html?id=19">Профиль</a></td>
+</tr>
+
+<tr class="user-row" data-id="20"
+ data-name="Фомина Юлия"
+ data-rating="1">
+  <td>20</td>
+  <td>Фомина Юлия</td>
+  <td>1</td>
+  <td><a href="profile.html?id=20">Профиль</a></td>
+</tr>
+
+<tr class="user-row" data-id="21"
+ data-name="Черняк Мария"
+ data-rating="1">
+  <td>21</td>
+  <td>Черняк Мария</td>
+  <td>1</td>
+  <td><a href="profile.html?id=21">Профиль</a></td>
+</tr>
+
+<tr class="user-row" data-id="22"
+ data-name="Чижиков Анатолий"
+ data-rating="1">
+  <td>22</td>
+  <td>Чижиков Анатолий</td>
+  <td>1</td>
+  <td><a href="profile.html?id=22">Профиль</a></td>
+</tr>
+
+<tr class="user-row" data-id="23"
+ data-name="Швец Иван"
+ data-rating="1">
+  <td>23</td>
+  <td>Швец Иван</td>
+  <td>1</td>
+  <td><a href="profile.html?id=23">Профиль</a></td>
+</tr>
+
+<tr class="user-row" data-id="24"
+ data-name="Шевченко Полина"
+ data-rating="1">
+  <td>24</td>
+  <td>Шевченко Полина</td>
+  <td>1</td>
+  <td><a href="profile.html?id=24">Профиль</a></td>
+</tr>
+
+<tr class="user-row" data-id="25"
+ data-name="Шукайло Дарья"
+ data-rating="1">
+  <td>25</td>
+  <td>Шукайло Дарья</td>
+  <td>1</td>
+  <td><a href="profile.html?id=25">Профиль</a></td>
+</tr>
+
+      </tbody>
+    </table>
+  </main>
+  <script src="main.js"></script>
+</body>
 </html>
